@@ -1,0 +1,38 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <TextView
+        android:id="@+id/txtActionBar"
+        style="@style/ActionBar"
+        android:text="@string/tennis_simulator"
+        />
+
+    <LinearLayout
+        android:layout_below="@+id/txtActionBar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/number_of_players"
+            android:textSize="@dimen/action_text_size"
+            android:gravity="center"/>
+        <EditText
+            android:id="@+id/edNumber"
+            android:layout_marginTop="10dp"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:background="@drawable/box"/>
+        <Button
+            android:id="@+id/btnStart"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/start"
+            android:background="@drawable/box_and_round"/>
+    </LinearLayout>
+
+</RelativeLayout>
